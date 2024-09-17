@@ -12,10 +12,10 @@
 ---02 COLORS:
     
     - PRIMERY: #e67e22
-      --TINTS:
-      --SHADES:
+      --TINTS: #fdf2e9;
+      --SHADES: #cf711f
       --ACCENTS:
-      --GRAY: #555
+      --GRAY: #555 , #333
 
 ---03 SHADOWS:
 
