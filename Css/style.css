@@ -70,7 +70,16 @@ strong {
   display: grid;
   row-gap: 9.6rem;
   column-gap: 9.4rem;
+  /* margin-bottom: 9.6rem; */
 }
+/* .grid:last-child{
+  margin-bottom: 0;
+} */👇👇👇👇👇👇
+.grid:not(:last-child){
+  margin-bottom: 9.6rem;
+}
+
+
 
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
@@ -118,6 +127,18 @@ strong {
   background-color: #fdf2e9;
   color: #555;
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  margin-left: 30px;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  /* list-style: circle; */
 }
 
 /* HELPER CLASSES */
@@ -398,18 +419,6 @@ strong {
   margin-bottom: 3.2rem;
 }
 
-.list {
-  display: flex;
-  flex-direction: column;
-  gap: 2.4rem;
-  margin-left: 30px;
-}
-
-.list-item {
-  font-size: 1.8rem;
-  list-style: circle;
-}
-
 .all-recipes {
   text-align: center;
   font-size: 1.8rem;
@@ -486,4 +495,77 @@ strong {
 
 .gallery-item img:hover {
   transform: scale(1.1);
+}
+
+/* SECTION PRICING */
+.section-pricing {
+  padding: 9.6rem 0;
+}
+.pricing-plan {
+  border-radius: 11px;
+  width: 50%;
+}
+
+.priceng-plan-starter {
+  justify-self: end;
+  border: 2px solid #fdf2e9;
+  padding: 5.7rem;
+}
+
+.pricing-plan-complete {
+  background-color: #fdf2e9;
+  padding: 4.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-plan-complete::after {
+  content: "Best value";
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  top: 6%;
+  right: -21%;
+  background-color: #ffd43b;
+  padding: 0.8rem 8rem;
+  color: #333;
+  transform: rotate(45deg);
+}
+
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.plan-name {
+  color: #cf711f;
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+
+.plan-sign-up {
+  text-align: center;
+  margin-top: 4.8rem;
 }
