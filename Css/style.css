@@ -5,6 +5,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
+  line-height: 1.2;
 }
 
 *:focus {
@@ -380,7 +381,7 @@ strong {
 }
 
 .meal-content {
-  padding: 3.2rem 4.8rem 4.2rem 4.2rem;
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
 }
 
 .meal-tags {
